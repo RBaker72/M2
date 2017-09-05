@@ -32,19 +32,15 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  char a[] = input.toCharArray();
+	  char letters[] = input.toCharArray();
 	  Random random = new Random();
-      
-    
-      for( int i = 0 ; i < a.length ; i++ ){
-        int j = random.nextInt(a.length);
-        // Swap letters
-        char temp = a[i]; 
-        a[i] = a[j];
-        a[j] = temp;
-        }       
-
-      return new String( a );
+      for( int i = 0 ; i < letters.length ; i++ ){
+        int j = random.nextInt(letters.length);
+        char temp = letters[i]; 
+        letters[i] = letters[j];
+        letters[j] = temp;
+        }
+      return new String(letters);
 	  //return null;
 	}
 	/**
