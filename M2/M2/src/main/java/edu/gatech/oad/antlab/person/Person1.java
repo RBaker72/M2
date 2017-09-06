@@ -32,9 +32,9 @@ public class Person1 {
 	private String calc(String input) {
 	  String substringToMove = "";
 	  String finalStr = "";
-      substringToMove = input.substring(0,1);
+      substringToMove = input.substring(0,2);
       System.out.println(substringToMove);
-      finalStr = input.substring(2, input.length() - 1) + substringToMove;
+      finalStr = input.substring(2, input.length()) + substringToMove;
       System.out.println(finalStr);
 	  return finalStr;
 	}
